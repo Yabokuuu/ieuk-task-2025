@@ -1,9 +1,57 @@
-# ieuk-task-2025
-This repo contains the log file for completing the 2025 IEUK Engineering task! The log file is too big to view in browser so you'll need to download it to your local machine. 
+# Traffic Analyzer
 
-## Download Task
-### Via Github UI 
-https://github.com/user-attachments/assets/81972137-bf32-42c1-bc7d-dc65a0b9398f
+A Python tool for analyzing web server logs to detect suspicious traffic patterns, such as bots, crawlers, and excessive requests.
 
-### Via Git
-You'll need to install Git and the Git LFS extension (which can be found [here](https://git-lfs.com/)). If you're unfamiliar with Git, I wouldn't worry about this—just download the log file via the UI. Using Git is not part of the task, so it's not worth spending too much time on it.
+## Features
+
+- Parses web server logs in the Common Log Format
+- Detects suspicious IPs based on request volume, status codes, and user-agent heuristics
+- Generates summary reports of traffic statistics
+- Visualizes top IPs and requested URLs
+- Outputs a list of suspicious IPs
+
+## Requirements
+
+See `requirements.txt` for dependencies.
+
+## Usage
+
+1. Place your log file (e.g., `sample-log.log`) in the project directory.
+2. Run the analyzer:
+
+   ```bash
+   python traffic_analyzer.py
+```markdown
+# Traffic Analyzer
+
+A Python tool for analyzing web server logs to detect suspicious traffic patterns, such as bots, crawlers, and excessive requests.
+
+## Features
+
+- Parses web server logs in the Common Log Format
+- Detects suspicious IPs based on request volume, status codes, and user-agent heuristics
+- Generates summary reports of traffic statistics
+- Visualizes top IPs and requested URLs
+- Outputs a list of suspicious IPs
+
+## Requirements
+
+See `requirements.txt` for dependencies.
+
+## Usage
+
+1. Place your log file (e.g., `sample-log.log`) in the project directory.
+2. Run the analyzer:
+
+   ```bash
+   python traffic_analyzer.py
+   ```
+
+3. View the generated report in the terminal.
+4. Check `traffic_analysis.png` for visualizations.
+5. Suspicious IPs are saved to `suspicious_ips.txt`.
+
+## Output
+
+- **traffic_analysis.png**: Bar charts of top IPs and URLs
+- **suspicious_ips.txt**: List of detected suspicious IP addresses
