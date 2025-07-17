@@ -46,12 +46,13 @@ Set up basic traffic alerts (UptimeRobot)
 
 📈 Long-Term Strategy
 
-graph TD  
-    A[Raw Traffic] --> B(Cloudflare Filtering)  
-    B --> C{Valid Traffic}  
-    C --> D[Server]  
-    C --> E[Cache Layer]  
-
+```mermaid
+graph TD
+    A[Raw Traffic] --> B(Cloudflare Filtering)
+    B --> C{Valid Traffic}
+    C --> D[Server]
+    C --> E[Cache Layer]
+```
 Cost Analysis
 Solution	Cost	Implementation Time
 IP Blocking	$0	1 hour
