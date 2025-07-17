@@ -1,6 +1,6 @@
 # Server Traffic Analysis Report  
-**Prepared for:** [Brightnetwork IEUK - Engineering ]  
-**Date:** [17/07/25]  
+**Prepared for:** Brightnetwork IEUK - Engineering 
+**Date:** 17/07/25  
 
 ## Executive Summary  
 Our analysis of server logs freveals that **non-human traffic accounts for 42% of total requests**, directly contributing to recent server outages. This report outlines:  
